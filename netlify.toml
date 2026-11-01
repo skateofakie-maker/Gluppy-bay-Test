@@ -1,0 +1,5 @@
+# Each upload adds a new "Gluppy Sim N.html" file. At deploy time, copy the
+# highest-numbered version to index.html so the site root always serves the latest.
+[build]
+  publish = "."
+  command = "ls Gluppy\\ Sim\\ *.html | sort -V | tail -n 1 | while read -r f; do cp \"$f\" index.html; echo \"Serving $f as index.html\"; done"
