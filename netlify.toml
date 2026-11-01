@@ -1,0 +1,6 @@
+# Serve the latest Gluppy Sim build at the site root.
+# Update the filename here when uploading a new version.
+[[redirects]]
+  from = "/"
+  to = "/Gluppy%20Sim%2025.html"
+  status = 200
